@@ -16,7 +16,7 @@ During last summer, when I took the machine learning MOOC by AndrewNg on courser
 
 ![nn_trained](https://cloud.githubusercontent.com/assets/25333848/24498620/4cef4474-153f-11e7-9e4e-3dfd6c654f5e.gif)
 
-*Different local minimuns after 10000 iterations, form vastly different shapes, and seems to omit certain layers *
+*Different local minimuns after 10000 iterations, form vastly different shapes, and seems to omit certain layers*
 
 ## Was the choice of 25 hidden layers pertinent ?
 
