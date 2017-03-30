@@ -4,6 +4,12 @@
 
 During last summer, when I took the machine learning MOOC by AndrewNg on coursera, I had some questions unanswered, and I wanted to visualize a neural net in action. This programm is my attempt to be a bit more knowledgable about it.
 
+## What is the purpose of the neural net
+
+The neural net is simply trying to recognize an hand-written digit it is fed. And will train on a batch of 5000 images. The images, are resized and grayscaled to 40 x 40 for consistency and efficiency. 
+
+![nn_data_visualisation](https://cloud.githubusercontent.com/assets/25333848/24527213/824b89ea-15a1-11e7-833d-ad9626671ab4.jpg)
+
 ## A visualisation of the training of a neural net
 
 <p align="center">
