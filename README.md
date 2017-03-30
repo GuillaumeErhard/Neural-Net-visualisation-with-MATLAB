@@ -1,8 +1,10 @@
 # Neural-Net-visualisation-with-MATLAB
-A deepening of the exercice n°4 from the Andrew Ng course, to study the effect of the size of a neural net, see how it converge, through iterations.
 
+## Introduction
 
-# A visualisation of the training of a neural net
+During last summer, when I took the machine learning MOOC by AndrewNg on coursera, I had some questions unanswered, and I wanted to visualize a neural net in action. This programm is my attempt to be a bit more knowledgable about it.
+
+## A visualisation of the training of a neural net
 
 <p align="center">
 
@@ -14,7 +16,7 @@ A deepening of the exercice n°4 from the Andrew Ng course, to study the effect 
 
 ![nn_trained](https://cloud.githubusercontent.com/assets/25333848/24498620/4cef4474-153f-11e7-9e4e-3dfd6c654f5e.gif)
 
-*Different local minimum after 10000 iterations*
+*Different local minimuns after 10000 iterations, form vastly different shapes, and seems to omit certain layers *
 
 ## Was the choice of 25 hidden layers pertinent ?
 
@@ -22,7 +24,7 @@ To actualy compare it I choose to start with a unique hidden layer, and record i
 
 ![nn_graph_sizehidden_compare](https://cloud.githubusercontent.com/assets/25333848/24522101/c4f56242-158e-11e7-95a5-7bcf2cc93f01.gif)
 
-What I observed was that going over 8 layer didn't improve much our algorithm. Except if an overfit and a 100 % accuracy was wanted. And as first expected, taking more complex algorithm, is detrimental to reach a high enough accuracy.
+What I first assumed was that going over 8 layer didn't improve much our algorithm. And it could prevent an overfit with a high number of iteration. And as first thought, taking more complex algorithm, is detrimental to reach a high enough accuracy.
 
 To look at this effect, I searched for the moment where the accuracy increase begins to stabilize, which I estimated at about 70 iterations, and it is strangely consistent throughout all the models. Also looking at what accuracy were the neural nets after X amounts of iterations
 
@@ -34,4 +36,4 @@ To look at this effect, I searched for the moment where the accuracy increase be
 
 ![nn_accuracy_bargraph_70i](https://cloud.githubusercontent.com/assets/25333848/24522140/e55a12f8-158e-11e7-8369-8d2c43ef2c39.jpg)
 
-A counter intuitive discovery was a better accuracy reached more quickly with more hidden layer.
+A counter intuitive discovery was a better accuracy was reached more quickly with more hidden layer up to a certain point. And 25 hidden layers seems in fact the best choice, to reach a good accuracy with little iterations, as well as many iterations.
