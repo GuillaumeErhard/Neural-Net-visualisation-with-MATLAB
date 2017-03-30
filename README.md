@@ -14,3 +14,4 @@ From a random distribution to start, to converge toward a local minimum.
 
 
 ![Demo](https://cloud.githubusercontent.com/assets/25333848/24498620/4cef4474-153f-11e7-9e4e-3dfd6c654f5e.gif)
+Different local minimum after 10000 iterations
