@@ -42,4 +42,4 @@ To look at this effect, I searched for the moment where the accuracy increase be
 
 ![nn_accuracy_bargraph_70i](https://cloud.githubusercontent.com/assets/25333848/24522140/e55a12f8-158e-11e7-8369-8d2c43ef2c39.jpg)
 
-A counter intuitive discovery was a better accuracy was reached more quickly with more hidden layer up to a certain point, so 25 hidden layers seems in fact the best choice, to reach a good accuracy with little iterations, as well as many iterations.
+A counter intuitive discovery was a better accuracy was reached more quickly with more hidden layer up to a certain point, and that the 25 hidden layers seems in fact the best choice, to reach a good accuracy with little iterations, as well as many iterations.
