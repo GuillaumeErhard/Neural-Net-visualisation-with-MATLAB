@@ -1,7 +1,9 @@
 %% Programm by Guillaume ERHARD
+
 % This programm was used to generate all the differents gif and plot used
-% in the github. But be free to use it as a base for any other
-% visualisation.
+% in the github.
+% github.com/GuillaumeErhard/Neural-Network-visualisation-with-MATLAB
+% But be free to use it as a base for any other visualisation.
 
 %%------------------------
 clear all; close all;clc;
@@ -22,12 +24,12 @@ for k = 1:10
     Data{k}=M.Prediction;
 end
 
-min_hidden_layer_size = 15;   
-max_hidden_layer_size = 55;
+min_hidden_layers_size = 15;   
+max_hidden_layers_size = 55;
 
 
 
-for k = min_hidden_layer_size:5:max_hidden_layer_size
+for k = min_hidden_layers_size:5:max_hidden_layers_size
     M = load(sprintf('pred_size_%d_1000i.mat',k));
     Data{k/5+8}=M.Prediction;
 end
@@ -36,12 +38,12 @@ end
 % Plotting accuracy over iterations
 
 figure();
-number_hidden_layer = [1,2,3,4,5,6,7,8,9,10,15,20,25,30,35,40,45,50,55];
+number_hiddens_layer = [1,2,3,4,5,6,7,8,9,10,15,20,25,30,35,40,45,50,55];
 
 for k=1:size(Data,2)
      
     p=plot(1:size(Data{1},1),Data{k},'LineWidth',2); ylim([0 100])
-    title([ 'Number of hidden layer : ' num2str(number_hidden_layer(k))] ,'FontWeight','bold');
+    title([ 'Number of hidden layers : ' num2str(number_hiddens_layer(k))] ,'FontWeight','bold');
     xlabel('Iterations','FontWeight','bold');
     ylabel('Accuracy in percent','FontWeight','bold');
     pause(0.6);
@@ -51,12 +53,12 @@ end
 
 % Plotting accuracy reached by each neural nets after 70 iterations
 
-accur_at_70i = cell2mat(Data(1:end));
-accur_at_70i = accur_at_70i(70,1:size(Data,2));
+accur_at_50i = cell2mat(Data(1:end));
+accur_at_50i = accur_at_50i(50,1:size(Data,2));
 figure();
-bar(number_hidden_layer,accur_at_70i,'FaceColor',[0.8 0.49 0]);
-title('Accuracy of the neural nets after 70 iterations','FontWeight','bold');
-xlabel('Number of hidden layer','FontWeight','bold');
+bar(number_hiddens_layer,accur_at_50i,'FaceColor',[0.8 0.49 0]);
+title('Accuracy of the neural nets after 50 iterations','FontWeight','bold');
+xlabel('Number of hidden layers','FontWeight','bold');
 ylabel('Accuracy in percent','FontWeight','bold');
 
 %%
