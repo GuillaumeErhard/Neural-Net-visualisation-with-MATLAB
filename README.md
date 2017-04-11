@@ -6,7 +6,7 @@ During last summer, when I took the machine learning MOOC by AndrewNg on courser
 
 ## What is the purpose of the neural net
 
-The neural net is simply trying to recognize an hand-written digit it is fed and will train on a batch of 5000 images. The images are resized and grayscaled to 40 x 40 for consistency and efficiency. 
+The neural net is simply trying to recognize an hand-written digit it is fed and will train on a batch of 5000 images. The images are taken from the classic MNIST database, sized and grayscaled to 40 x 40 for consistency and efficiency. To accomplish this, the neural net is performing a gradient descent to converge, and uses a sigmoid fonction as activation for the neuron.
 
 ![nn_data_visualisation](https://cloud.githubusercontent.com/assets/25333848/24528336/3c549936-15a6-11e7-8a55-6575d814ecf5.jpg)
 
