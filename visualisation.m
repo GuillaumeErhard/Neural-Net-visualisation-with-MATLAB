@@ -51,7 +51,7 @@ for k=1:size(Data,2)
     
 end
 
-% Plotting accuracy reached by each neural nets after 70 iterations
+% Plotting accuracy reached by each neural nets after 50 iterations
 
 accur_at_50i = cell2mat(Data(1:end));
 accur_at_50i = accur_at_50i(50,1:size(Data,2));
@@ -60,6 +60,7 @@ bar(number_hiddens_layer,accur_at_50i,'FaceColor',[0.8 0.49 0]);
 title('Accuracy of the neural nets after 50 iterations','FontWeight','bold');
 xlabel('Number of hidden layers','FontWeight','bold');
 ylabel('Accuracy in percent','FontWeight','bold');
+plot(1:size(Data{1},1),Data{1},1:size(Data{1},1),Data{1},1:size(Data{1},1),Data{1});
 
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
